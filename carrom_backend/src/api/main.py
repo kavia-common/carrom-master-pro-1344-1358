@@ -13,11 +13,11 @@ import logging
 import json
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Depends
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
-from sqlalchemy.orm import Session, joinedload
+from sqlalchemy.orm import joinedload
 
-from src.api.database import get_db, engine, Base
+from src.api.database import get_db
 from src.api.models import Game, GamePlayer, Turn
 from src.api.websocket_manager import manager
 from src.api.routes import (

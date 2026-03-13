@@ -26,7 +26,6 @@ from src.api.schemas import (
     PlayerCreate, PlayerResponse,
     GameCreate, GameResponse, GameStateResponse,
     GameSettingsUpdate, GameSettingsResponse,
-    GamePlayerResponse,
     TurnCreate, TurnResponse,
     ScoreResponse,
     AnalyticsEventCreate, AnalyticsEventResponse,
@@ -38,7 +37,7 @@ from src.api.game_logic import (
     get_turn_number,
 )
 from src.api.ai_engine import generate_ai_move
-from src.api.analytics import log_event, log_game_event, log_error_event
+from src.api.analytics import log_event, log_game_event
 
 logger = logging.getLogger(__name__)
 

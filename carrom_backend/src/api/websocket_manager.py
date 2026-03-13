@@ -4,10 +4,8 @@ WebSocket connection manager for real-time game state synchronization.
 Manages WebSocket connections grouped by game ID, enabling
 live broadcasting of game state updates to all connected clients.
 """
-import json
 import logging
-from typing import Dict, List, Set
-from uuid import UUID
+from typing import Dict, List
 
 from fastapi import WebSocket
 

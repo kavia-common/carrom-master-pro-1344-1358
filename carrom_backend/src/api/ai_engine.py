@@ -9,7 +9,7 @@ Provides AI move generation based on difficulty levels:
 import random
 import math
 import logging
-from typing import List, Tuple
+from typing import List
 
 logger = logging.getLogger(__name__)
 
